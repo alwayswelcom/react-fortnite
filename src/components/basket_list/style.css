@@ -1,0 +1,33 @@
+.basket_list {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 50rem;
+    max-width: 95%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    z-index: 15;
+    animation: show 600ms ease-in-out;
+}
+
+.basket-close {
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes show {
+    from {
+        top: 30%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
